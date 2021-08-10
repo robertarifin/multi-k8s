@@ -2,9 +2,9 @@ docker build -t arifinrobert/multi-client:latest -t arifinrobert/multi-client:$S
 docker build -t arifinrobert/multi-server:latest -t arifinrobert/multi-server:$SHA  -f ./server/Dockerfile ./server
 docker build -t arifinrobert/multi-worker:latest -t arifinrobert/multi-worker:$SHA  -f ./worker/Dockerfile ./worker
 
-docker push arifinrobert/multi-client
-docker push arifinrobert/multi-server
-docker push arifinrobert/multi-worker
+docker push arifinrobert/multi-client:latest
+docker push arifinrobert/multi-server:latest
+docker push arifinrobert/multi-worker:latest
 
 docker push arifinrobert/multi-client:$SHA
 docker push arifinrobert/multi-server:$SHA
